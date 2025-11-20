@@ -1,0 +1,48 @@
+/* ------------------ Background Blur ------------------ */
+.stApp {
+    background: url("https://images.unsplash.com/photo-1521790797524-b2497295b8a0") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(0px);
+}
+
+/* Transparent card effect */
+.block-container {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+/* ------------------ Buttons ------------------ */
+.stButton>button {
+    background: linear-gradient(135deg, #6C63FF, #8E44AD);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.stButton>button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #8E44AD, #6C63FF);
+}
+
+/* ------------------ Input fields ------------------ */
+input, select {
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+
+/* ------------------ Sidebar ------------------ */
+[data-testid="stSidebar"] {
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+}
+
+[data-testid="stSidebar"] * {
+    color: white;
+}
